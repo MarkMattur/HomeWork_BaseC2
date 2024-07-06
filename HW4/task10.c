@@ -31,7 +31,7 @@ int main(void)
     }     
     else
     {
-         printf("%s\n", "autum");
+         printf("%s\n", "autumn");
     }    
 return 0;
 }
