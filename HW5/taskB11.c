@@ -49,5 +49,7 @@ int main(void)
         printf("%u", digit[n]);
     }
 
+    printf("\n");
+
     return 0;
 }
