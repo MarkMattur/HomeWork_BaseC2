@@ -37,28 +37,35 @@ int main(void)
     {
         numberDigits = numberDigits / 10;
         count++;
+        //~ printf("count = %d ", count);
     }while (numberDigits != 0);
+
+    //~ printf("\n");
 
     int digit[count];
     for (int n = 1; n <= count; n++)
     {
         digit[n] = number % 10;
         number = number / 10;
+        //~ printf("number = %d ", number);
     }
+
+    //~ printf("\n");
 
     int sum = 0;
     for (int n = 1; n <= count; n++)
     {
         sum += digit[n];
+        //~ printf("sum = %d ", sum);
     }
 
-    if (sum == 10)
+    if (sum != 10)
     {
-        printf("%s\n", "YES");
+        printf("%s\n", "NO");
     }
     else
     {
-        printf("%s\n", "NO");
+        printf("%s\n", "YES");
     }
 
     return 0;
