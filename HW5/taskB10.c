@@ -23,14 +23,13 @@ YES
 Результат работы
 NO
 
-ПРОГРАММА ВЫДАЕТ ПРАВИЛЬНЫЙ РЕЗУЛЬТАТ,
-НО КОНТЕСТ ВОСПРИНИМАЕТ КАК ОШИБОЧНУЮ
 */
 
 int main(void)
 {
-    unsigned int numberDigits, number, count = 0;
-    scanf("%u", &number);
+    int numberDigits, number, numberStart, count = 0;
+    scanf("%d", &number);
+    numberStart = number;
 
     numberDigits = number;
     while (numberDigits != 0)
@@ -55,7 +54,12 @@ int main(void)
         }
     }
 
-    if (increase == (count - 1))
+
+    if ((numberStart >= 0) && (numberStart <= 9))
+    {
+        printf("%s\n", "YES");
+    }
+    else if (increase == (count - 1))
     {
         printf("%s\n", "YES");
     }

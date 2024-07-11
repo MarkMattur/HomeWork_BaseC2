@@ -27,15 +27,15 @@
 
 int main(void)
 {
-    int number, count = 0;
+    unsigned int number, count = 0;
 
     do
     {
-        scanf("%d", &number);
+        scanf("%u", &number);
         count++;
     }while (number != 0);
 
-    printf("%d\n", (count-1));
+    printf("%u\n", (count-1));
 
     return 0;
 }

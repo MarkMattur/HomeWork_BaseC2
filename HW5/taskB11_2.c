@@ -26,34 +26,42 @@
 
 int main(void)
 {
-    unsigned int numberDigits, startNumber, count = 0;
+    unsigned int numberDigits, count = 0;
     unsigned int number;
-
     scanf("%u", &number);
-    startNumber = number;
+
+    if (number == 0)
+    {
+        printf("%u\n", number);
+        return 0;
+    }
 
     numberDigits = number;
     while (numberDigits != 0)
     {
         numberDigits = numberDigits / 10;
         count++;
+        //~ printf("count = %u ", count);
     };
+
+    //~ printf("\n");
+
     int digit[count];
-    for (int n = 1; n <= count; n++)
+    for (int n = 0; n < count; n++)
     {
         digit[n] = number % 10;
+        //~ printf("digit[%u] = %u ", n, digit[n]);
         number = number / 10;
+        //~ printf("number = %u\n", number);
     }
-    if (startNumber >= 10)
-        for (int n = 1; n <= count; n++)
-        {
-            printf("%u", digit[n]);
-        }
-    else
-        {
-            printf("%u", startNumber);
-        }
+
+    for (int n = 0; n < count; n++)
+    {
+        printf("%u", digit[n]);
+    }
+
     printf("\n");
 
     return 0;
 }
+

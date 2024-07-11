@@ -28,7 +28,7 @@
 int main(void)
 {
     unsigned int number, count = 0;
-    unsigned int digit[100];
+    unsigned int digit[10000];
 
     do
     {

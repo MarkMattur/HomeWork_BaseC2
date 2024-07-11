@@ -32,11 +32,12 @@ int main(void)
     scanf("%u", &number);
 
     numberDigits = number;
-    while (numberDigits != 0)
+
+    do
     {
         numberDigits = numberDigits / 10;
         count++;
-    };
+    }while (numberDigits != 0);
 
     int digit[count];
     for (int n = 1; n <= count; n++)
