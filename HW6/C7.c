@@ -27,17 +27,12 @@
 102
 */
 
-
-
 int decToP(int n, int p)
 {
-
     int prod, temp = 0;
     int i = 1;
-
     while (n/p > 0)
     {
-
         prod = n % p;
         n = n / p;
         //~ printf("prod = %d", prod);
@@ -48,7 +43,6 @@ int decToP(int n, int p)
         //~ printf(" i = %d\n", i);
 
     }
-
     prod = temp + i * n;
     //~ printf("prod = %d", prod);
 
