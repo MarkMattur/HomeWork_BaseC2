@@ -27,8 +27,8 @@ NO
 
 int main(void)
 {
-    unsigned int numberDigits, count = 0;
-    unsigned int number;
+    int numberDigits, count = 1;
+    int number;
     scanf("%u", &number);
 
     numberDigits = number;

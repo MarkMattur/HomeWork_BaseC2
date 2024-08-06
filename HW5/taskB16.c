@@ -33,7 +33,11 @@ int main(void)
 {
     int num1, num2, numMax, numMin, temp;
 
+
     scanf("%d%d", &num1, &num2);
+
+    numMax = num1;
+    numMin = num2;
 
     while (numMin != 0)
         {
